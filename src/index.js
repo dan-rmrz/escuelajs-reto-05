@@ -29,12 +29,17 @@ const getData = api => {
     .catch(error => console.log(error));
 }
 
+let llamadasALaAPI = 0;
+
 const loadData = async () => {
   try {
-    if (!localStorage.next_fetch) {
+    if (localStorage.next_fetch===null || llamadasALaAPI===0) {
+      localStorage.removeItem('next_fetch');
       await getData(API)
+      llamadasALaAPI++;      
     } else {
       await getData(`${localStorage.next_fetch}`)
+      llamadasALaAPI++;
     }
   } catch {
   }
@@ -43,6 +48,7 @@ const loadData = async () => {
 const intersectionObserver = new IntersectionObserver(entries => {
   if (entries[0].isIntersecting) {
     loadData();
+    console.log(`llamadas: ${llamadasALaAPI}`);
   }
 }, {
   rootMargin: '0px 0px 100% 0px',
