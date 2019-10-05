@@ -12,4 +12,4 @@ Usuario Platzi: @danrmrz
   - [x] Primer problema
   - [x] Segundo problema
   - [x] Tercer problema
-  - [ ] Cuarto Problema (Opcional)
+  - [x] Cuarto Problema (Opcional)
