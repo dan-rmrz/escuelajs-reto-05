@@ -2,15 +2,14 @@
 
 Solución al reto 05 de Escuela de JavaScript
 
-Nombre:
-Usuario Platzi:
+Nombre: Daniel Ramirez Ramirez
+Usuario Platzi: @danrmrz
 
 ## Ciudad
-- [ ] Ciudad de México
-- [ ] Bogotá
+- Ciudad de México
 
 ## Reto:
-  - [ ] Primer problema
+  - [x] Primer problema
   - [ ] Segundo problema
   - [ ] Tercer problema
   - [ ] Cuarto Problema (Opcional)
